@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About CoPet - Get to Know CoPet</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet (Separated CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white-page">
+
+  <!-- =========================================================================
+       HEADER / NAVBAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-0 align-items-center">
+        <!-- Brand Logo & Name -->
+        <a class="brand-wrapper" href="index.html" aria-label="CoPet Home">
+          <!-- Logo Image -->
+          <img src="images/logo.png" alt="CoPet Logo" class="brand-logo-img">
+          <span class="brand-title">CoPet</span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links & Button -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <!-- Centered 3 Horizontal Links: Home, Discover, Information -->
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="discover.html">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#information">Information</a>
+            </li>
+          </ul>
+
+          <!-- Right Action Button -->
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+            <a href="#our-product" class="btn btn-nav-product">Our Product</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       ABOUT SECTION
+       ========================================================================= -->
+  <main class="about-hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <!-- Left Content Column -->
+        <div class="col-lg-6">
+          <span class="about-label-badge scroll-reveal sr-from-left sr-d1">ABOUT</span>
+
+          <h1 class="about-main-title scroll-reveal sr-d2">
+            <span class="lead-text">Get to Know </span><span class="brand-accent">CoPet</span>
+          </h1>
+
+          <p class="about-main-description scroll-reveal sr-d3">
+            For centuries, domestic ceramics held the warmth of hearth and family. Yet in modern pet care, feeding was reduced to clinical petroleum polymers and thin metallic clatter that slides across cold hardwood floors.
+          </p>
+        </div>
+
+        <!-- Right Image Column -->
+        <div class="col-lg-6 about-image-column scroll-reveal sr-from-right sr-d2">
+          <div class="about-pets-container">
+            <img 
+              src="images/pets.jpg" 
+              alt="Golden Retriever and British Shorthair Cat" 
+              class="about-pets-image"
+              width="504"
+              height="504"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       OUR PRODUCT SECTION
+       ========================================================================= -->
+  <section id="our-product" class="our-product-section">
+    <div class="container">
+      <span class="product-label-badge scroll-reveal sr-from-left sr-d1">OUR PRODUCT</span>
+
+      <div class="row align-items-center g-4 g-lg-5 mt-1">
+        <!-- Left Column: Overlapping Images -->
+        <div class="col-lg-6 product-overlap-column scroll-reveal sr-from-left sr-d2">
+          <div class="product-cards-cluster">
+            <div class="card-item card-tilt-left">
+              <img src="images/product3.jpg" alt="CoPet Box Packaging" class="overlap-img">
+            </div>
+            <div class="card-item card-tilt-right">
+              <img src="images/product2.jpg" alt="CoPet Coconut Peat Pet Bowls" class="overlap-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Content -->
+        <div class="col-lg-6 product-text-column scroll-reveal sr-from-right sr-d3">
+          <h2 class="product-main-title">
+            <span class="lead-text">Meet the </span><span class="brand-accent">CoPet</span>
+          </h2>
+
+          <p class="product-main-description">
+            A lightweight and affordable pet bowl made from coconut peat, featuring a natural brown appearance and a simple, functional design.
+          </p>
+
+          <div class="product-cta-wrapper">
+            <a href="index.html#home" class="btn btn-explore-copet">EXPLORE COPET</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       THE PROCESS SECTION
+       ========================================================================= -->
+  <section id="process" class="innovation-process-section">
+    <div class="container">
+      <span class="process-label-badge scroll-reveal sr-from-left sr-d1">THE PROCESS</span>
+
+      <h2 class="process-main-title scroll-reveal sr-d2">
+        <span class="lead-text">Innovation </span><span class="brand-accent">Process</span>
+      </h2>
+
+      <!-- Timeline Track -->
+      <div class="process-timeline-wrapper scroll-reveal sr-d3">
+        <div class="process-timeline-track">
+          <div class="timeline-horizontal-bar"></div>
+
+          <div class="timeline-steps-container">
+            <!-- Step 1 -->
+            <div class="timeline-step step-top">
+              <div class="step-content">
+                <p class="step-desc">Gather coconut husks from local sources.</p>
+                <h4 class="step-title">COLLECTION</h4>
+              </div>
+              <div class="step-stem"></div>
+              <div class="step-node">1</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="timeline-step step-bottom">
+              <div class="step-node">2</div>
+              <div class="step-stem"></div>
+              <div class="step-content">
+                <h4 class="step-title">PREPARATION</h4>
+                <p class="step-desc">Clean and process the husks into coconut peat.</p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="timeline-step step-top">
+              <div class="step-content">
+                <p class="step-desc">Combine the coconut peat with binding materials.</p>
+                <h4 class="step-title">MIXING</h4>
+              </div>
+              <div class="step-stem"></div>
+              <div class="step-node">3</div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="timeline-step step-bottom">
+              <div class="step-node">4</div>
+              <div class="step-stem"></div>
+              <div class="step-content">
+                <h4 class="step-title">MOLDING</h4>
+                <p class="step-desc">Shape the mixture into bowls.</p>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="timeline-step step-top">
+              <div class="step-content">
+                <p class="step-desc">Allow the bowls to become firm</p>
+                <h4 class="step-title">DRYING</h4>
+              </div>
+              <div class="step-stem"></div>
+              <div class="step-node">5</div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="timeline-step step-bottom">
+              <div class="step-node">6</div>
+              <div class="step-stem"></div>
+              <div class="step-content">
+                <h4 class="step-title">FINISHING</h4>
+                <p class="step-desc">Sand the bowls, apply protective coating, and conduct quality inspection.</p>
+              </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="timeline-step step-top">
+              <div class="step-content">
+                <p class="step-desc">Prepare the finished bowls for customers.</p>
+                <h4 class="step-title">PACKAGING</h4>
+              </div>
+              <div class="step-stem"></div>
+              <div class="step-node">7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       WHY CHOOSE COPET SECTION
+       ========================================================================= -->
+  <section class="why-choose-section">
+    <div class="container">
+      <h2 class="why-choose-title scroll-reveal sr-d1">
+        <span class="lead-text">Why Choose </span><span class="brand-accent">CoPet</span><span class="lead-text">?</span>
+      </h2>
+
+      <p class="why-choose-description scroll-reveal sr-d2">
+        CoPet provides an affordable and eco-friendly alternative to conventional pet bowls by<br class="d-none d-md-block">
+        transforming discarded coconut husks into a useful everyday product. With its natural<br class="d-none d-md-block">
+        brown appearance and simple, functional design, it offers a practical feeding solution for<br class="d-none d-md-block">
+        pets while promoting sustainability, reducing coconut waste, and encouraging more<br class="d-none d-md-block">
+        responsible use of natural resources.
+      </p>
+    </div>
+
+    <div class="why-choose-image-wrap scroll-reveal sr-from-right sr-d3">
+      <!-- You mentioned having the pets image overflowing bottom right here -->
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TEAM SECTION (Meet the minds behind the innovations)
+       ========================================================================= -->
+  <section class="team-section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="row mb-5 scroll-reveal sr-from-left sr-d1">
+        <div class="col-lg-6">
+          <h2 class="team-title">
+            <span class="lead-text">Meet the </span><span class="brand-accent">minds</span><span class="lead-text"> behind the </span><span class="brand-accent">innovations.</span>
+          </h2>
+          <p class="team-description">
+            Meet the people behind the idea and the mission to make pet care more sustainable.
+          </p>
+        </div>
+      </div>
+
+      <!-- Team Members Grid -->
+      <div class="team-grid-wrapper scroll-reveal sr-d2">
+        
+        <!-- Top Row (3 Members) -->
+        <div class="row justify-content-center gx-4 gy-5">
+          <!-- Member 1 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="team-card">
+              <img src="images/1.jpg" alt="Lady Christine Tagra" class="team-img">
+              <h3 class="team-name">LADY CHRISTINE TAGRA</h3>
+              <p class="team-role">Business Manager</p>
+            </div>
+          </div>
+          
+          <!-- Member 2 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="team-card">
+              <img src="images/2.jpg" alt="Emiry Sheen Ferasol" class="team-img">
+              <h3 class="team-name">EMIRY SHEEN FERASOL</h3>
+              <p class="team-role">Financial Manager</p>
+            </div>
+          </div>
+          
+          <!-- Member 3 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="team-card">
+              <img src="images/3.jpg" alt="Hazel Dameg" class="team-img">
+              <h3 class="team-name">HAZEL DAMEG</h3>
+              <p class="team-role">Finance Officer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row (2 Members) -->
+        <div class="row justify-content-center gx-4 gy-5 mt-2">
+          <!-- Member 4 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="team-card">
+              <img src="images/4.jpg" alt="Elaiza Mae Lopez" class="team-img">
+              <h3 class="team-name">ELAIZA MAE LOPEZ</h3>
+              <p class="team-role">Sales Representative</p>
+            </div>
+          </div>
+          
+          <!-- Member 5 -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="team-card">
+              <img src="images/5.jpg" alt="Lara Mae Lanasa" class="team-img">
+              <h3 class="team-name">LARA MAE LANASA</h3>
+              <p class="team-role">Marketing Officer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer id="information" class="site-footer">
+    <div class="container">
+      <div class="row align-items-start g-4">
+        <!-- Left Side -->
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <img src="images/logo.png" alt="CoPet White Logo" class="footer-logo-img">
+            <span class="footer-brand-title">CoPet</span>
+          </div>
+
+          <h3 class="footer-tagline">Pawsitively Natural</h3>
+
+          <p class="footer-description">
+            Made with care for your pets, using natural ingredients and thoughtful choices.
+          </p>
+
+          <p class="footer-copyright">
+            &copy; 2025 CoPet.
+          </p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-5 d-flex justify-content-lg-end">
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html" class="footer-nav-link">Home</a>
+            <a href="discover.html" class="footer-nav-link">Discover</a>
+            <a href="index.html#information" class="footer-nav-link">Information</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

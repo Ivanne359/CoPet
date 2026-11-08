@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Soft warm glow behind the bowls -->
+    <radialGradient id="glow" cx="60%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFD6BA" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FCE1CD" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFF9F2" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Bowl Shadow -->
+    <filter id="bowlShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#5C2E17" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Terracotta Glaze Gradients -->
+    <linearGradient id="bowlGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B74B20"/>
+      <stop offset="40%" stop-color="#8C3110"/>
+      <stop offset="100%" stop-color="#5E1D06"/>
+    </linearGradient>
+
+    <radialGradient id="innerBowlGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#D75F2C"/>
+      <stop offset="45%" stop-color="#9C3612"/>
+      <stop offset="85%" stop-color="#551906"/>
+      <stop offset="100%" stop-color="#3A1003"/>
+    </radialGradient>
+
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DE6E3A"/>
+      <stop offset="50%" stop-color="#9E3A15"/>
+      <stop offset="100%" stop-color="#5A1E08"/>
+    </linearGradient>
+
+    <!-- Ceramic Speckle / Texture -->
+    <pattern id="speckle" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="0.8" fill="#FFE3D1" opacity="0.4"/>
+      <circle cx="14" cy="12" r="0.6" fill="#401204" opacity="0.5"/>
+      <circle cx="18" cy="4" r="0.9" fill="#FFE3D1" opacity="0.35"/>
+      <circle cx="8" cy="17" r="0.7" fill="#2E0A02" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Warm ambient backdrop glow -->
+  <rect width="700" height="480" fill="url(#glow)"/>
+
+  <!-- BOWL 1: Top-Left Bowl -->
+  <g filter="url(#bowlShadow)">
+    <!-- Base / outer rim -->
+    <ellipse cx="230" cy="180" rx="140" ry="115" fill="url(#rimGrad)"/>
+    <ellipse cx="230" cy="180" rx="140" ry="115" fill="url(#speckle)"/>
+    <!-- Rim inner bevel -->
+    <ellipse cx="230" cy="180" rx="122" ry="98" fill="#4A1604"/>
+    <!-- Inner Bowl Cavity -->
+    <ellipse cx="228" cy="182" rx="116" ry="92" fill="url(#innerBowlGrad)"/>
+    <ellipse cx="228" cy="182" rx="116" ry="92" fill="url(#speckle)"/>
+    <!-- Gloss highlight -->
+    <ellipse cx="205" cy="165" rx="30" ry="14" fill="#FFFFFF" opacity="0.25" transform="rotate(-15 205 165)"/>
+  </g>
+
+  <!-- BOWL 2: Top-Right Bowl -->
+  <g filter="url(#bowlShadow)">
+    <!-- Base / outer rim -->
+    <ellipse cx="490" cy="175" rx="138" ry="113" fill="url(#rimGrad)"/>
+    <ellipse cx="490" cy="175" rx="138" ry="113" fill="url(#speckle)"/>
+    <!-- Rim inner bevel -->
+    <ellipse cx="490" cy="175" rx="120" ry="96" fill="#4A1604"/>
+    <!-- Inner Bowl Cavity -->
+    <ellipse cx="488" cy="177" rx="114" ry="90" fill="url(#innerBowlGrad)"/>
+    <ellipse cx="488" cy="177" rx="114" ry="90" fill="url(#speckle)"/>
+    <!-- Gloss highlight -->
+    <ellipse cx="468" cy="160" rx="28" ry="13" fill="#FFFFFF" opacity="0.25" transform="rotate(-15 468 160)"/>
+  </g>
+
+  <!-- BOWL 3: Bottom Center Bowl (Front Overlapping) -->
+  <g filter="url(#bowlShadow)">
+    <!-- Base / outer rim -->
+    <ellipse cx="365" cy="305" rx="155" ry="125" fill="url(#rimGrad)"/>
+    <ellipse cx="365" cy="305" rx="155" ry="125" fill="url(#speckle)"/>
+    <!-- Rim inner bevel -->
+    <ellipse cx="365" cy="305" rx="135" ry="107" fill="#4A1604"/>
+    <!-- Inner Bowl Cavity -->
+    <ellipse cx="362" cy="307" rx="128" ry="100" fill="url(#innerBowlGrad)"/>
+    <ellipse cx="362" cy="307" rx="128" ry="100" fill="url(#speckle)"/>
+    <!-- Bottom bowl specular reflection rings -->
+    <ellipse cx="362" cy="315" rx="75" ry="50" fill="none" stroke="#FFA372" stroke-width="2" opacity="0.35"/>
+    <ellipse cx="335" cy="285" rx="35" ry="16" fill="#FFFFFF" opacity="0.3" transform="rotate(-12 335 285)"/>
+  </g>
+</svg>

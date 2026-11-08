@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="46" height="46" fill="none">
+  <!-- Outer circular border -->
+  <circle cx="50" cy="50" r="46" stroke="#145021" stroke-width="2.5" fill="#FAF5EE"/>
+  <circle cx="50" cy="50" r="41" stroke="#145021" stroke-width="1" stroke-dasharray="2 2" fill="none"/>
+  
+  <!-- Curving text path / top text CoPet -->
+  <path id="textPathTop" d="M 22 42 A 30 30 0 0 1 78 42" fill="none"/>
+  <text font-family="'Playfair Display', serif" font-size="10" font-weight="700" fill="#145021">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">CoPet</textPath>
+  </text>
+  
+  <!-- Pet bowl and paw icon in center -->
+  <ellipse cx="50" cy="58" rx="20" ry="7" fill="#145021"/>
+  <path d="M 30 58 Q 50 78 70 58 Z" fill="#145021"/>
+  <!-- Paw print inside bowl -->
+  <circle cx="50" cy="54" r="2.5" fill="#FAF5EE"/>
+  <circle cx="45" cy="50" r="1.8" fill="#FAF5EE"/>
+  <circle cx="55" cy="50" r="1.8" fill="#FAF5EE"/>
+  <circle cx="42" cy="54" r="1.5" fill="#FAF5EE"/>
+  <circle cx="58" cy="54" r="1.5" fill="#FAF5EE"/>
+  
+  <!-- Little bottom stars or laurel leaves -->
+  <path d="M 38 74 C 44 76, 56 76, 62 74" stroke="#145021" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
