@@ -1252,12 +1252,90 @@ body.bg-white-page .site-header.scrolled {
   display: block;
 }
 
+
+/* ==========================================================================
+   VISION, MISSION, GOALS SECTION (NEW)
+   ========================================================================== */
+.vmg-section {
+  background-color: #FFFFFF;
+  padding: 5rem 0 4rem 0;
+  position: relative;
+}
+
+.vmg-block {
+  background: var(--color-bg-base); /* Very subtle warm background for contrast on white */
+  padding: 2.5rem;
+  border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(20, 80, 33, 0.04);
+}
+
+.vmg-title {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.3px;
+  border-bottom: 2px solid rgba(20, 80, 33, 0.1);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.vmg-description {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* Goals List Styling */
+.goal-subtitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 700;
+  color: #9A4616; /* Rust accent */
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.goal-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.goal-list li {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15.5px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.goal-list li::before {
+  content: '●'; /* Bullet point character */
+  position: absolute;
+  left: 0;
+  top: -1px;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+
 /* ==========================================================================
    TEAM SECTION (Meet the minds...)
    ========================================================================== */
 .team-section {
   background-color: #FFFFFF;
-  padding: 6rem 0 7rem 0;
+  padding: 4rem 0 7rem 0;
   position: relative;
 }
 
@@ -1301,7 +1379,7 @@ body.bg-white-page .site-header.scrolled {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  object-position: top center; /* <--- ADDED THIS TO FIX CROPPED HEADS */
+  object-position: top center; /* <--- FIX FOR CROPPED HEADS */
   margin-bottom: 1.25rem;
   transition: transform var(--transition-smooth);
 }
@@ -1494,6 +1572,19 @@ body.bg-white-page .site-header.scrolled {
   .why-choose-pets-img {
     width: 300px;
     height: 280px;
+  }
+
+  /* VMG Mobile */
+  .vmg-section {
+    padding: 3rem 0;
+  }
+
+  .vmg-block {
+    padding: 1.75rem;
+  }
+  
+  .vmg-title {
+    font-size: 28px;
   }
 
   /* Team Section Mobile */
