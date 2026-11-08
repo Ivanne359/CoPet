@@ -1301,6 +1301,7 @@ body.bg-white-page .site-header.scrolled {
   width: 220px;
   height: 220px;
   object-fit: cover;
+  object-position: top center; /* <--- ADDED THIS TO FIX CROPPED HEADS */
   margin-bottom: 1.25rem;
   transition: transform var(--transition-smooth);
 }
